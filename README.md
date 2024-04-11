@@ -1,6 +1,6 @@
 
 
-# Tax Calculator
+# Tax Calculator Fyle Web Development Intern Assignment
 
 The Tax Calculator is a tool designed to calculate income tax based on the provided inputs such as gross annual income, extra income, deductions, and age group. It follows specific tax calculation rules outlined below:
 
