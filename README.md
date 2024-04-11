@@ -19,6 +19,17 @@ The Tax Calculator is a tool designed to calculate income tax based on the provi
 - No deductions
 - Tax Calculation: 0.3 * (40 - 8) = 0.3 * 32 = 9.6 Lakhs
 
+## Screenshots
+1. Wrong Inputs (i Icon)
+![Validation](https://drive.google.com/uc?export=view&id=1LpEz8Gm56LvovWuHMZS4slULGAiT5VdJ)
+2. ToolTip
+![ToolTip](https://drive.google.com/uc?export=view&id=1MCcoW7N09Pm7rQUMdaRZ8JjUBHxjvOpw)
+3. Correct Tax Deduction
+![Tax](https://drive.google.com/uc?export=view&id=1dAKEaC4Bq_e89Wuep6PRBNwTQjdw97Rc)
+
+
+4. Negative Net Income
+![Nincome](https://drive.google.com/uc?export=view&id=1K1mBdU88BocDEZnuTMFE5A-ms7GG4B_V)
 ## Features
 
 - Allows input of gross annual income, extra income, deductions, and age group.
