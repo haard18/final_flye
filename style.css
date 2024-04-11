@@ -247,7 +247,7 @@
     .alertAnnualIncome {
         position: fixed;
         right: 490px;
-        top: 50px;
+        top: 190px;
         display: none;
         padding: 4px;
         color: white;
@@ -262,7 +262,7 @@
         padding: 4px;
 
         background-color: black;
-        top: 170px;
+        top: 270px;
         display: none;
         border: 2px solid black;
     }
@@ -274,7 +274,7 @@
         padding: 4px;
 
         background-color: black;
-        top: 260px;
+        top: 430px;
         display: none;
         border: 2px solid rgb(0, 0, 0);
     }
