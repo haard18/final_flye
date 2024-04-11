@@ -1,0 +1,300 @@
+    /* Basic Reset */
+    * {
+        box-sizing: border-box;
+    }
+/* Done */
+    body {
+        margin: 0;
+        background-color: blanchedalmond;
+        font-family: Arial, sans-serif;
+    }
+
+    input {
+        border: 2px solid rgb(177, 173, 173);
+        /* Blue border */
+        outline: none;
+        /* Removes the outline on focus */
+        padding: 5px;
+        /* Spacing inside the input */
+        font-size: 16px;
+        /* Text size */
+        background-color: rgb(177, 173, 173);
+        /* Light grey background */
+        border-radius: 5px;
+        /* Rounded corners */
+    }
+
+    select {
+        border: 2px solid rgb(177, 173, 173);
+        /* Blue border */
+        outline: none;
+        /* Removes the outline on focus */
+        padding: 5px;
+        /* Spacing inside the input */
+        font-size: 16px;
+        /* Text size */
+        background-color: rgb(177, 173, 173);
+        /* Light grey background */
+        border-radius: 5px;
+        /* Rounded corners */
+    }
+
+    button {
+        margin-top: 20px;
+        background-color: rgb(79, 79, 228);
+        padding: 10px;
+        border: 2px solid rgb(79, 79, 228);
+        ;
+        color: white;
+        font-weight: 700;
+    }
+
+
+
+    .container-left {
+        position: relative;
+        /* Add this line */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 2px white solid;
+        border-radius: 10%;
+        width: 28%;
+        height: 50%;
+        margin: auto;
+        margin-top: 100px;
+        padding: 20px;
+        background-color: #6f4e37b0;
+        ;
+    }
+
+    #taxResult {
+        position: absolute;
+        /* Make the tax result overlay */
+        top: 0;
+        left: 3px;
+        width: 50%;
+        height: 50%;
+        display: none;
+        /* Keep this to initially hide the overlay */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+        z-index: 2;
+        padding: 10px;
+        border-radius: 4px;
+        border: 1px solid #ddd;
+        margin-left: 345px;
+    }
+
+    h5 {
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    .input-cont {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    /* .input-field {
+        margin-bottom: 20px;
+        background-color: c;
+    } */
+
+    .submit-btn {
+        margin-top: 20px;
+    }
+
+    .info-icon {
+        cursor: pointer;
+        display: inline-block;
+        margin-left: 5px;
+        font-weight: bold;
+        /* border: 1px solid black; */
+        border-radius: 50%;
+        padding: 3px;
+        /* padding-left: ; */
+
+    }
+
+
+    .tooltip-container {
+        position: relative;
+        display: inline-block;
+    }
+
+    .tooltip {
+        visibility: hidden;
+        width: 160px;
+        background-color: rgb(29, 27, 27);
+        color: white;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px;
+
+        /* Position the tooltip - adjust according to your layout */
+        position: absolute;
+        z-index: 1;
+        left: 105%;
+        /* Adjust this as necessary */
+        top: 50%;
+        transform: translateY(-50%);
+        margin-left: 5px;
+    }
+
+    .tooltip-container:hover .tooltip {
+        visibility: visible;
+    }
+
+
+    #taxResult  {
+        margin-top: 20px;
+        padding: 10px;
+        background-color: #dbb9a0;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+
+    .box-content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .input-container {
+        position: relative;
+        width: fit-content;
+        /* Ensure the container only takes as much width as needed */
+    }
+
+    .icon-container-extra {
+        position: absolute;
+        top: 50%;
+        right: 5px;
+        /* Adjust the right distance according to your design */
+        transform: translateY(-50%);
+    }
+
+    .icon-container-annual {
+        position: absolute;
+        top: 50%;
+        right: 5px;
+        /* Adjust the right distance according to your design */
+        transform: translateY(-50%);
+    }
+
+    .icon-container-deduction {
+        position: absolute;
+        top: 50%;
+        right: 5px;
+        /* Adjust the right distance according to your design */
+        transform: translateY(-50%);
+    }
+
+    /* Adjust icon styles as needed */
+    .icon-container-extra i {
+        color: #888;
+        font-size: 16px;
+        cursor: pointer;
+        display: none;
+        /* Add pointer cursor to indicate it's clickable */
+    }
+
+    .icon-container-annual i {
+        color: #888;
+        font-size: 16px;
+        cursor: pointer;
+        display: none;
+        /* Add pointer cursor to indicate it's clickable */
+    }
+
+    .icon-container-deduction i {
+        color: #888;
+        font-size: 16px;
+        cursor: pointer;
+        display: none;
+    }
+
+    .icon-container-age i {
+        color: #888;
+        font-size: 16px;
+        cursor: pointer;
+        display: none;
+        /* Add pointer cursor to indicate it's clickable */
+    }
+
+    .info-tooltip {
+        position: absolute;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        padding: 5px;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        display: none;
+        width: fit-content;
+    }
+
+    .icon-container:hover .info-tooltip {
+        display: block;
+        /* Show tooltip on hover */
+    }
+
+    .alertAnnualIncome {
+        position: fixed;
+        right: 490px;
+        top: 50px;
+        display: none;
+        padding: 4px;
+        color: white;
+        background-color: black;
+        border: 2px solid black;
+    }
+
+    .alertextraIncome {
+        position: fixed;
+        right: 544px;
+        color: white;
+        padding: 4px;
+
+        background-color: black;
+        top: 170px;
+        display: none;
+        border: 2px solid black;
+    }
+
+    .alertDeduction {
+        position: fixed;
+        right: 544px;
+        color: white;
+        padding: 4px;
+
+        background-color: black;
+        top: 260px;
+        display: none;
+        border: 2px solid rgb(0, 0, 0);
+    }
+
+    .icon-container-annual:hover+.alertAnnualIncome {
+        display: block;
+    }
+
+    .icon-container-extra:hover+.alertextraIncome {
+        display: block;
+    }
+
+    .icon-container-deduction:hover+.alertDeduction {
+        display: block;
+    }
+    .bottomleftImage {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 800px; /* Adjust the width as needed */
+        height: auto; /* Maintain aspect ratio */
+        z-index: 1; /* Ensure the image stays above other content */
+    }
